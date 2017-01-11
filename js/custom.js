@@ -19,6 +19,7 @@ $(document).ready(function(){
     });
     
     
+
     //top_tab_menu랑 top_tab_box벗어나면 사라짐
     $(".top_tab_menu >ul >li, .top_tab_box>div").mouseleave(function(){
         
@@ -28,8 +29,6 @@ $(document).ready(function(){
         $(".top_tabWrap").stop().animate({"height":0},500);
         $(".top_tab_box >div").stop().hide();
 
-        $(".top_tab_menu >ul >li").removeClass("show");
-    
     });   
     
 
@@ -44,7 +43,8 @@ $(document).ready(function(){
         $(this).addClass("show");    
         
         
-//        $(".top_tab_box>div").eq(list).addClass("show");
+        $(".top_tab_box>div").eq(list).addClass("show");
+
 
     
     });
